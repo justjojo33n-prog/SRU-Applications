@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Streaming Roblox University | Applications</title>
+<title>
+Streaming Roblox University | S.R.U Applications
+</title>
+
 
 <style>
 
@@ -11,74 +15,128 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
+
 body{
+
 margin:0;
 background:#070d1a;
 color:white;
+
 }
+
 
 header{
-height:40vh;
+
+height:45vh;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 text-align:center;
-background:linear-gradient(135deg,#0066ff,#8500ff);
+
+background:
+linear-gradient(135deg,#0066ff,#8500ff);
+
 }
+
+
 
 header h1{
+
 font-size:50px;
+
 margin:0;
+
 }
 
+
 header p{
+
 font-size:20px;
+
 }
+
 
 
 .container{
+
 width:90%;
+
 max-width:1000px;
+
 margin:auto;
+
 padding:30px;
+
 }
+
 
 
 .card{
 
 background:#121b32;
-border-radius:20px;
+
 padding:25px;
+
+border-radius:20px;
+
 margin:25px 0;
+
 box-shadow:0 0 20px black;
 
 }
 
 
+
 h2{
+
 color:#55b8ff;
+
 }
 
 
 h3{
+
 color:#8bc9ff;
+
+}
+
+
+
+.role{
+
+background:#1d2945;
+
+padding:20px;
+
+border-radius:15px;
+
+margin:15px 0;
+
 }
 
 
 
 input,
-textarea,
-select{
+select,
+textarea{
 
 width:100%;
+
 padding:14px;
+
 margin:8px 0;
 
 background:#202c49;
-color:white;
 
 border:none;
+
 border-radius:10px;
+
+color:white;
 
 font-size:16px;
 
@@ -97,6 +155,7 @@ height:120px;
 button{
 
 width:100%;
+
 padding:15px;
 
 background:#0066ff;
@@ -122,20 +181,6 @@ background:#008cff;
 
 
 
-.role{
-
-background:#1d2945;
-
-padding:20px;
-
-border-radius:15px;
-
-margin:15px 0;
-
-}
-
-
-
 li{
 
 margin:8px;
@@ -146,6 +191,7 @@ margin:8px;
 </style>
 
 </head>
+
 
 
 <body>
@@ -172,25 +218,30 @@ Roblox Streaming Roleplay University
 </header>
 
 
+
 <div class="container">
 
 <div class="card">
 
 <h2>
-👨‍🏫 Teacher Program
+👨‍🏫 S.R.U Teacher Program
 </h2>
+
 
 
 <div class="role">
 
+
 <h3>
-🎥 Teacher 1 - Streaming Technology
+🎥 Teacher 1 — Streaming Technology
 </h3>
+
 
 
 <h4>
 📅 Day 1: Stream Setup & First Settings
 </h4>
+
 
 <ul>
 
@@ -210,21 +261,24 @@ Roblox Streaming Roleplay University
 
 
 
+
+
 <h4>
 📅 Day 2: Overlays & Alerts
 </h4>
 
+
 <ul>
 
-<li>Starting Soon screen</li>
+<li>Adding Starting Soon screen</li>
 
-<li>BRB screen</li>
+<li>Adding BRB screen</li>
 
-<li>Ending screen</li>
+<li>Adding Ending screen</li>
 
 <li>Webcam placement</li>
 
-<li>Chat box</li>
+<li>Chat box setup</li>
 
 <li>Follower alerts</li>
 
@@ -238,7 +292,11 @@ Roblox Streaming Roleplay University
 
 </ul>
 
+
 </div>
+
+
+
 
 
 
@@ -248,8 +306,9 @@ Roblox Streaming Roleplay University
 
 
 <h3>
-📱 Teacher 2 - Content & Social Media
+📱 Teacher 2 — Content & Social Media
 </h3>
+
 
 
 <h4>
@@ -274,6 +333,8 @@ Roblox Streaming Roleplay University
 
 
 
+
+
 <h4>
 📅 Day 2: Posting on Social Media
 </h4>
@@ -291,14 +352,21 @@ Roblox Streaming Roleplay University
 
 <li>Posting on X (Twitter)</li>
 
-<li>Writing titles, hashtags and descriptions</li>
+<li>Writing good titles</li>
 
-<li>Best times to post after a stream</li>
+<li>Using hashtags</li>
+
+<li>Writing descriptions</li>
+
+<li>Best times to post after Twitch streams</li>
 
 </ul>
 
 
 </div>
+
+
+
 
 
 
@@ -323,7 +391,7 @@ Roblox Streaming Roleplay University
 
 <li>Experience with streaming or content creation</li>
 
-<li>Be active and available for classes</li>
+<li>Be active and attend classes</li>
 
 </ul>
 
@@ -345,18 +413,23 @@ Roblox Streaming Roleplay University
 </h2>
 
 
+
 <input 
+id="teacherUser"
 placeholder="Roblox Username"
 >
 
 
+
 <input
+id="teacherDiscord"
 placeholder="Discord Username"
 >
 
 
 
-<select>
+<select id="teacherRole">
+
 
 <option>
 🎥 Streaming Technology Teacher
@@ -372,26 +445,33 @@ placeholder="Discord Username"
 
 
 
+
 <textarea
-placeholder="Your experience and why should S.R.U accept you?"
+id="teacherMessage"
+placeholder="Tell us your experience and why you should be accepted"
 ></textarea>
 
 
 
-<button onclick="submitApplication()">
+
+
+<button onclick="sendTeacher()">
 
 Submit Teacher Application
 
 </button>
 
 
+
 </div>
 
 <div class="card">
 
+
 <h2>
 🎓 Student Application
 </h2>
+
 
 
 <h3>
@@ -420,56 +500,72 @@ Submit Teacher Application
 
 
 
+
 <input
+id="studentUser"
 placeholder="Roblox Username"
 >
 
 
 
 <input
+id="studentDiscord"
 placeholder="Discord Username"
 >
 
 
 
-<select>
+<select id="studentCourse">
+
 
 <option>
 🎮 Sport Games
 </option>
 
+
 <option>
 🎬 Clip Farming
 </option>
+
 
 <option>
 👁️ First Person Games
 </option>
 
+
 <option>
 🖱️ Clicker Games
 </option>
+
 
 <option>
 ⚙️ Simulator Games
 </option>
 
 
+
 </select>
 
 
 
+
+
+
 <textarea
-placeholder="Why do you want to join Streaming Roblox University?"
+id="studentMessage"
+placeholder="Why do you want to join S.R.U?"
 ></textarea>
 
 
 
-<button onclick="submitApplication()">
+
+
+<button onclick="sendStudent()">
 
 Submit Student Application
 
 </button>
+
 
 
 </div>
@@ -490,15 +586,15 @@ Submit Student Application
 <p>
 
 Streaming Roblox University is a Roblox roleplay university
-where students learn streaming, content creation, social media,
-and gaming skills.
+where students learn streaming, content creation, gaming,
+and social media skills.
 
 </p>
 
 
 <p>
 
-🎓 Maximum Students: 10
+🎓 Maximum Students: 20
 
 <br>
 
@@ -506,7 +602,7 @@ and gaming skills.
 
 <br>
 
-🛡️ Security Application: Closed
+🛡️ Security Applications: Closed
 
 </p>
 
@@ -520,17 +616,175 @@ and gaming skills.
 
 
 
+
+
+
 <script>
 
 
-function submitApplication(){
+// Replace this with your hosted Node.js server URL
+
+const SERVER_URL =
+"https://YOUR-SERVER-URL.com";
+
+
+
+
+
+
+
+async function sendApplication(data){
+
+
+try{
+
+
+let response =
+await fetch(
+SERVER_URL + "/application",
+{
+
+
+method:"POST",
+
+
+headers:{
+
+"Content-Type":"application/json"
+
+},
+
+
+body:JSON.stringify(data)
+
+
+}
+
+);
+
+
+
+let result =
+await response.json();
+
+
+
+if(result.success){
+
 
 alert(
-"✅ Application submitted to Streaming Roblox University!"
+"✅ Application sent to S.R.U!"
 );
 
 
 }
+
+else{
+
+
+alert(
+"❌ Failed sending application"
+);
+
+
+}
+
+
+
+}
+
+catch(error){
+
+
+console.log(error);
+
+
+alert(
+"❌ Server is offline"
+);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+function sendTeacher(){
+
+
+sendApplication({
+
+
+type:"👨‍🏫 Teacher",
+
+
+username:
+document.getElementById("teacherUser").value,
+
+
+discord:
+document.getElementById("teacherDiscord").value,
+
+
+role:
+document.getElementById("teacherRole").value,
+
+
+message:
+document.getElementById("teacherMessage").value
+
+
+
+});
+
+
+}
+
+
+
+
+
+
+
+
+function sendStudent(){
+
+
+sendApplication({
+
+
+type:"🎓 Student",
+
+
+username:
+document.getElementById("studentUser").value,
+
+
+discord:
+document.getElementById("studentDiscord").value,
+
+
+role:
+document.getElementById("studentCourse").value,
+
+
+message:
+document.getElementById("studentMessage").value
+
+
+
+});
+
+
+}
+
 
 
 </script>
